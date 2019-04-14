@@ -1,6 +1,7 @@
 package com.example.quanlidiemrenluyen.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.quanlidiemrenluyen.Models.HocKyView;
 import com.example.quanlidiemrenluyen.R;
+import com.example.quanlidiemrenluyen.activities.DanhGiaActivity;
 
 import java.util.List;
 
@@ -31,9 +33,16 @@ public class HocKyAdapter extends RecyclerView.Adapter<HocKyAdapter.ViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull HocKyAdapter.ViewHolder viewHolder, int i) {
+    public void onBindViewHolder(@NonNull final HocKyAdapter.ViewHolder viewHolder, int i) {
         viewHolder.hocky.setText(hocKyViewList.get(i).getHocky());
         viewHolder.note.setText(hocKyViewList.get(i).getNote());
+
+        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(context, DanhGiaActivity.class));
+            }
+        });
 
     }
 

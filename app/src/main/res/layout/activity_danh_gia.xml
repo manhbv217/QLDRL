@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DanhGiaActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbardanhgia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#ffff"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/MenuStyle"
+        />
+    <ScrollView
+        android:layout_below="@id/toolbardanhgia"
+        android:layout_width="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ythuchoctap"
+        android:textSize="15dp"
+        android:text="1. Ý Thức Học Tập"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tv_ythuchoctap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_diemchuan"
+        android:textSize="15dp"
+        android:text="1.1 Điểm Chuẩn (+30)"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tv_diemchuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_trudiem"
+        android:textSize="15dp"
+        android:text="1.2 Trừ Điểm"
+        android:textStyle="bold"
+
+        />
+        <CheckBox
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_trudiem"
+        android:id="@+id/cb11"
+        android:text="Học lực yếu"
+        />
+       <CheckBox
+           android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb11"
+        android:id="@+id/cb12"
+        android:text="Bị cảnh cáo học vụ"
+        /><CheckBox
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb12"
+        android:id="@+id/cb13"
+        android:text="Đăng ký không đủ tín chỉ"
+        />
+       <CheckBox
+           android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb13"
+        android:id="@+id/cb14"
+        android:text="Bị cấm thi hoặc bỏ thi không có lí do"
+        />
+       <CheckBox
+           android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb14"
+        android:id="@+id/cb15"
+        android:text="Kỷ luật thi"
+        /><TextView
+            android:layout_below="@id/cb15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ythuchoctap2"
+        android:textSize="15dp"
+        android:text="2. Ý Thức và chấp hành nội quy, quy chế của nhà trường"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tv_ythuchoctap2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_diemchuan2"
+        android:textSize="15dp"
+        android:text="2.1 Điểm Chuẩn (+30)"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tv_diemchuan2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_trudiem2"
+        android:textSize="15dp"
+        android:text="2.2 Trừ Điểm"
+        android:textStyle="bold"
+
+        />
+        <CheckBox
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_trudiem2"
+        android:id="@+id/cb21"
+        android:text="Nộp hoặc nhận không đúng một khoản kinh phí"
+        />
+       <CheckBox
+           android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb21"
+        android:id="@+id/cb22"
+        android:text="Đăng ký học quá hạn"
+        /><CheckBox
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb22"
+        android:id="@+id/cb23"
+        android:text="Không thực hiện theo đúng giấy Triệu tập/Yêu cầu của nhà Trường"
+        />
+       <CheckBox
+           android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb23"
+        android:id="@+id/cb24"
+        android:text="Không tham gia bảo hiểm Y tế"
+        />
+       <CheckBox
+           android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb24"
+        android:id="@+id/cb25"
+        android:text="Có quyết định kỷ luật"
+        />
+<TextView
+        android:layout_below="@id/cb25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ythuchoctap3"
+        android:textSize="15dp"
+        android:text="3. Về phẩm chất công dân và quan hệ v i cộng đồng "
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tv_ythuchoctap3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_diemchuan3"
+        android:textSize="15dp"
+        android:text="1.1 Điểm Chuẩn (+30)"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tv_diemchuan3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_trudiem3"
+        android:textSize="15dp"
+        android:text="1.2 Trừ Điểm"
+        android:textStyle="bold"
+
+        />
+        <CheckBox
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_trudiem3"
+        android:id="@+id/cb31"
+        android:text="Có Thông báo bằng văn bản về việc không chấp hành các chủ trư ng của Đảng, chính sách pháp lu t của Nhà nước, vi phạm an ninh chính trị, tr t tự an toàn xã hội, an toàn giao thông "
+        />
+       <CheckBox
+           android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb31"
+        android:id="@+id/cb32"
+        android:text="Không có tinh thần giúp đỡ bạn bè, không thể hiện tinh thần đoàn kết t p thể"
+        />
+            <TextView
+                android:layout_below="@id/cb32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_ythuchoctap4"
+                android:textSize="15dp"
+                android:text="4. Ý thức và kết quả tham gia hoạt động chính trị - xã hội, văn hoá, văn nghệ, thể thao, phòng chống các tệ nạn xã hội  "
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/tv_ythuchoctap4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_diemchuan4"
+                android:textSize="15dp"
+                android:text="4.1 Điểm Chuẩn (+0)"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/tv_diemchuan4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_congdiem4"
+                android:textSize="15dp"
+                android:text="4.2 Cộng Điểm"
+                android:textStyle="bold"
+
+                />
+            <CheckBox
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_congdiem4"
+                android:id="@+id/cb41"
+                android:text="Tham gia đầy đủ các hoạt động của chi đoàn và tham gia đầy đủ các buổi sinh hoạt chính trị theo triệu t p (nếu có) của Nhà trường  "
+                />
+            <CheckBox
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb41"
+                android:id="@+id/cb42"
+                android:text=" Tham gia (có giấy xác nhận) các hoạt động văn nghệ, thể thao, câu lạc bộ, hoạt động tình nguyện"
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/cb42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_trudiem4"
+                android:textSize="15dp"
+                android:text="4.3 Trừ Điểm"
+                android:textStyle="bold"
+
+                />
+            <CheckBox
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_trudiem4"
+                android:id="@+id/cb43"
+                android:text="Không tham gia Sinh hoạt chính trị theo Quy định"
+                />
+            <TextView
+                android:layout_below="@id/cb43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_ythuchoctap5"
+                android:textSize="15dp"
+                android:text="5. Ý thức và kết quả tham gia công tác phụ trách lớp, các đoàn thể, tổ chức trong nhà trường hoặc đạt được thành tích đặc biệt trong học tập, rèn luyện của học sinh, sinh viên "
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/tv_ythuchoctap5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_diemchuan5"
+                android:textSize="15dp"
+                android:text="5.1 Điểm Chuẩn (+0)"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/tv_diemchuan5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_congdiem5"
+                android:textSize="15dp"
+                android:text="5.2 Cộng Điểm"
+                android:textStyle="bold"
+
+                />
+            <CheckBox
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_congdiem5"
+                android:id="@+id/cb51"
+                android:text="Giữ các chức vụ trong các tổ chức chính quyền, đoàn thể và được đánh giá hoàn thành tốt nhiệm vụ"
+                />
+            <CheckBox
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb51"
+                android:id="@+id/cb52"
+                android:text="Học lực (Xuất sắc, Giỏi)"
+                />
+            <CheckBox
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb52"
+                android:id="@+id/cb53"
+                android:text=" Tham gia các cuộc thi chuyên môn như Procon, Olympic, An toàn thông tin"
+                />
+            <CheckBox
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb53"
+                android:id="@+id/cb54"
+                android:text=" Đạt giải NCKH các cấp hoặc có báo cáo tại Hội nghị NCKH bài báo đăng trên các tạp chí trong và ngoài nước"
+                />
+            <CheckBox
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb54"
+                android:id="@+id/cb55"
+                android:text=" Được kết nạp Đảng"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cb55"
+                android:id="@+id/btn_submit"
+                android:text="Xác nhận và Nộp"
+                android:layout_centerHorizontal="true"
+
+                />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

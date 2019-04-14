@@ -141,10 +141,12 @@ public class MainActivity extends AppCompatActivity
             });
         }
 
-        reference = FirebaseDatabase.getInstance().getReference();
-        reference.child("Covan").child("idcovan").push().setValue(new CoVan("id","classid"));
-
-        reference = FirebaseDatabase.getInstance().getReference();
+//        reference = FirebaseDatabase.getInstance().getReference();
+//        reference.child("Covan").push().setValue(new CoVan("id","classid","covanid"));
+//        reference.child("Covan").push().setValue(new CoVan("id","classid","covanid"));
+//        reference.child("Covan").push().setValue(new CoVan("id","classid","covanid"));
+//
+//        reference = FirebaseDatabase.getInstance().getReference();
 //        reference.child("HocKy").push().setValue(new HocKy("1","hk1"));
 //        reference.child("HocKy").push().setValue(new HocKy("1","hk1"));
 //        reference.child("HocKy").push().setValue(new HocKy("1","hk1"));
